@@ -7,7 +7,7 @@ namespace _Exercicio_AlicotaComIfs
 {
     class Programa
     {
-        public static void Main(string args[])
+        public static void Main(string[] args)
         {
             double impostoDeRenda = 0;
             double deducao = 0;
@@ -20,13 +20,13 @@ namespace _Exercicio_AlicotaComIfs
                 deducao = 142;
             }
 
-            if (salario >= 2800.01 && salario <= 3751.0)
+            else if (salario >= 2800.01 && salario <= 3751.0)
             {
                 impostoDeRenda = 15;
                 deducao = 350;
             }
 
-            if (salario >= 3751.01 && salario <= 4664.00)
+            else if (salario >= 3751.01 && salario <= 4664.00)
             {
                 impostoDeRenda = 22.5;
                 deducao = 636;
